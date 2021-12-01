@@ -1,0 +1,125 @@
+:root {
+  --vermelha: #e50914;
+  --preta: #141414;
+  --cinza: #aaa;
+  --branca: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Elementos base*/
+
+body {
+  background: var(--preta);
+  font-family: "Times New Roman", Times, serif;
+  color: var(--branca);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 5px;
+  background: -webkit-linear-gradient(#109ff2, #d80a37);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--cinza);
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: var(--branca);
+}
+
+/*Filme principal*/
+
+.principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) 100%),
+    url(../img/capa-home-dio.jpg);
+
+  height: 500px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.principal button {
+  text-transform: uppercase;
+}
+
+.principal .titulo {
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: fantasy;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#109ff2, #d80a37);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.principal .titulo span {
+  font-size: 60px;
+  text-transform: lowercase;
+}
+
+.botao {
+  background-color: rgba(192, 24, 128, 0.5);
+  border: none;
+  color: var(--branca);
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.botao:hover {
+  background-color: var(--branca);
+  color: rgba(192, 24, 128, 1);
+}
+
+.botao i {
+  margin-right: 10px;
+}
+
+.container {
+  margin: 0 30px;
+}
+
+.principal .container {
+  width: 70%;
+}
+
+.box-curso {
+  height: 480px;
+  width: 100%;
+  display: flex;
+}
+
+.carrosel-cursos {
+  margin-top: 10px;
+}
